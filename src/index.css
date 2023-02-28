@@ -1,0 +1,294 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins:200,300,regular,700&display=swap);
+
+* *::after *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+html,
+body {
+  line-height: 24px;
+  font-family: 'Poppins';
+  color: #000000;
+}
+
+
+#root {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+[class*="__container"] {
+  max-width: 1188px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+
+
+.main__container {
+  margin-top: 152px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.main__left-side {
+  flex: 0 1 494px
+}
+
+@media (max-width:1100px) {
+  .main__container{
+    margin-top: 70px;
+    flex-wrap: wrap;
+    max-width: 500px;
+    justify-content: center;
+    gap: 25px;
+  }
+}
+
+
+.main__title {
+  font-family: 'Playfair Display';
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 69px;
+  padding-bottom: 20px;
+  color: #000000;
+}
+
+.main__text {
+  font-weight: 300;
+  font-size: 18px;
+  padding-bottom: 34px;
+  line-height: 158%;
+}
+
+.button__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 38px;
+  align-items: center;
+  padding-bottom: 46px;
+}
+
+.main__button {
+  padding: 14px 25px;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 158%;
+  color: #000000;
+  background: #F2F0DF;
+  transition: all .3s ease-out;
+  border-radius: 19px;
+}
+
+.main__button:hover{
+  background: #d9d081;
+}
+
+
+.main__link {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  gap: 8px;
+}
+
+
+.main__announce {
+  position: relative;
+  height: 155px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-shadow: 15px 9px 30px rgba(160, 160, 160, 0.25);
+  border-radius: 19px;
+  ;
+}
+
+.solid__text{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 158%;
+}
+
+.main__announce-image {
+  position: absolute;
+  width: 114.09px;
+  height: 107.29px;
+  top: 0;
+  left: -4%;
+}
+
+.title__announce {
+  font-weight: 275;
+  font-size: 33px;
+  line-height: 158%;
+  padding: 33px 31px 70px 40px;
+}
+
+.text__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+
+.text__announce {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 158%;
+}
+
+
+.shoes {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background: url('./assets/renta.jpg'), #D9D9D9;
+  border-radius: 19px;
+  min-width: 254px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  height: 531px;
+}
+
+.shoes:hover{
+  transform: scale(1.1);
+  margin-bottom: 20px;
+}
+
+.shoes__inner {
+  margin: 12px;
+  background: #FFFFFF;
+  padding: 7px 17px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.shoes__image{
+  position: absolute;
+  top: 0;
+  left: -17%;
+  max-width: 100%;
+}
+
+
+.banner__holder {
+  display: flex;
+  gap: 29px;
+}
+
+@media (max-width:646px) {
+  .banner__holder {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+  }
+}
+
+@media (max-width:545px) {
+  .button__wrapper{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .text__wrapper{
+    display: block;
+    text-align: center;
+  }
+  .text__announce{
+    padding: 5px;
+  }
+  .title__announce{
+    padding: 5px;
+  }
+  .main__title{
+    font-size: 42px;
+    line-height: 65px;
+  }
+  .main__announce-image{
+    left: -2%;
+  }
+}
+
+@media (max-width:357px) {
+  .shoes__image{
+    left: -10%;
+  }
+}
+
+.banner__wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.small__banner{
+  display: flex;
+  flex-direction: column-reverse;
+  background: url('./assets/Rectangle2.jpg'), #D9D9D9;
+  min-width: 254px;
+  height: 251px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  border-radius: 19px;
+}
+
+.small__banner:hover{
+  transform: scale(1.1);
+  margin-bottom: 20px;
+}
+
+
+.small__banner-1{
+  display: flex;
+  flex-direction: column-reverse;
+  background: url('./assets/Rectangle3.jpg'), #D9D9D9;
+  min-width: 254px;
+  height: 251px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  border-radius: 19px;
+}
+
+.small__banner-1:hover{
+  transform: scale(1.1);
+  margin-bottom: 20px;
+}
